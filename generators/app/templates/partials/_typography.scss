@@ -1,0 +1,24 @@
+//
+//  _typography.scss
+//
+
+// Scale headings
+@for $i from 1 to 6 {
+  h#{$i} {
+    $this-size-multiple: $header_max-font-size-multiple - $i;
+    font-size: modular-scale($this-size-multiple);
+  }
+}
+
+#{$heading-selectors} {
+  font-weight: $font-weight_heading;
+  line-height: $line-height_heading;
+  @include margin($vertical-margin_heading, vertical);
+}
+
+body, p {
+  line-height: $line-height_default;
+  font-size: $font-size_base;
+  @include margin($vertical-margin_paragraph, vertical);
+}
+

@@ -1,0 +1,19 @@
+//
+//  _partials.scss
+//
+//    ~ collects all the partial files to make
+//      importing them to the main stylesheet easy.
+//
+//     [[Best Practice:]]
+//     Nothing except additional partial file imports
+//     should be added to this file.
+//     It should only ever contain import statements.
+//
+
+@import "variables";
+@import "grids";
+@import "layout";
+@import "typography";
+@import "buttons";
+@import "forms";
+@import "temp";

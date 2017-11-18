@@ -1,0 +1,46 @@
+//
+//  _variables.scss
+//
+
+
+/* ****************************************************************************************************************** */
+/* ... A few really basic and common variables ... */
+/* ****************************************************************************************************************** */
+
+// TYPOGRAPHY
+$spacing_base:                      1.5em;
+$vertical-margin_paragraph:         $spacing_base;
+$vertical-margin_heading:           0 $spacing_base;
+$font-size_base:                    16px;
+$header_max-font-size-multiple:     4;
+$line-height_default:               1.5;
+$line-height_heading:               1;
+$font-weight_base:                  400;
+$font-weight_heading:               600;
+$font-family_source-sans-pro:       'Source Sans Pro';
+$font-family_roboto:                'Roboto';
+$font-family_lato:                  'Lato';
+$font-stack_system:                 -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif !default;
+$font-stack_main:                   $font-stack_system;
+/*
+ * Or...
+ * $primary-font: $font-family_source-sans-pro (ect.)
+ * $font-stack: $primary-font, $system-font-stack;
+ * ^^^^^^ however, if you use any of those fonts, DO NOT FORGET to include them!
+ *        (either the font-files or Google Font CDN, or some other method.)
+ */
+
+// MISC
+$border-radius_base:                3px;
+$heading-selectors:                 h1, h2, h3, h4, h5, h6;
+
+// BUTTONS
+$button_text-color:                 #fff;
+$button_border-radius:              $border-radius_base;
+$button_font-size:                  $font-size_base;
+$button_font-weight:                500;
+$button_vertical-margin:            $spacing_base;
+
+// FORM INPUTS
+$input_border-radius:               $border-radius_base;
+$input_font-size:                   $font-size_base;

@@ -1,0 +1,47 @@
+//
+//  _mixins.scss
+//
+
+
+/**
+ * @mixin margin
+ * @definition:   Sets uniform margin in one, two, or all directions
+ * @param:        $margin-value   -   Value to set specified margin to
+ * @param:        $direction      -   (ONE OF: a, all, vertical, v, horzontal, h, top, t, bottom, b, left, l, right, r)
+ */
+@mixin margin($margin-value, $direction: all) {
+  @if $direction == all {
+    margin: $margin-value;
+  } @else if $direction == a {
+      margin: $margin-value;
+  } @else if $direction == vertical {
+      margin-top: $margin-value;
+      margin-bottom: $margin-value;
+  } @else if $direction == v {
+      margin-top: $margin-value;
+      margin-bottom: $margin-value;
+  } @else if $direction == horizontal {
+      margin-left: $margin-value;
+      margin-right: $margin-value;
+  } @else if $direction == h {
+      margin-left: $margin-value;
+      margin-right: $margin-value;
+  } @else if $direction == top {
+      margin-top: $margin-value;
+  } @else if $direction == t {
+      margin-top: $margin-value;
+  } @else if $direction == bottom {
+      margin-bottom: $margin-value;
+  } @else if $direction == b {
+      margin-bottom: $margin-value;
+  } @else if $direction == left {
+      margin-left: $margin-value;
+  } @else if $direction == l {
+      margin-left: $margin-value;
+  } @else if $direction == right {
+      margin-right: $margin-value;
+  } @else if $direction == r {
+      margin-right: $margin-value;
+  }
+}
+

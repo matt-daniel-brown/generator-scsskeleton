@@ -1,0 +1,9 @@
+//
+//  _vendor.scss
+//
+@import "bourbon/bourbon";
+@import "reset";
+//@import "normalize";
+@import "mq"; // Check out the file for documentation
+
+// ^^^To use normalize INSTEAD of Reset: comment out the first line and thenuncomment second line

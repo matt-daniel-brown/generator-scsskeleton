@@ -1,0 +1,61 @@
+/*
+ * =====================================================================================================================
+ *
+ *    _primary-styles.scss
+ *
+ * =====================================================================================================================
+ *
+ *    --- To generate this Scss file's output to a seperate,
+ *    --- standalone CSS file, remove the underscore ('_')
+ *    --- from the begining of the file name.
+ *    --- (e.i., change '_primary-styles.scss' to -> 'primary-styles.scss')
+ *
+ * =====================================================================================================================
+ *
+ *     - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+ *     - (** OPINIONATED, and **) Suggested Structural Guide To  -
+ *     - Follow With, and While Expanding on, these Files.       -
+ *     - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+ *
+ * styles/          (... or wherever you ran the generator...)
+ *   |
+ *   |-- modules/              # Common modules
+ *   |   |-- _modules.scss     # Include to get all modules
+ *   |   |-- _mixins.scss      # Misc mixins
+ *   |   |-- _utility.scss     # Module name                      [currently empty]
+ *   |   |-- _colors.scss      # Etc...                           [currently empty]
+ *   |   ...
+ *   |
+ *   |-- partials/             # Partials
+ *   |   |-- _partials.sass    # imports all the partial files
+ *   |   |-- _buttons.scss     # buttons                          [currently empty]
+ *   |   |-- _forms.scss       # forms and inputs                 [currently empty]
+ *   |   |-- _grids.scss       # grids
+ *   |   |-- _typography.scss  # typography
+ *   |   |-- _layout.scss      # layout
+ *   |   ...
+ *   |
+ *   |-- vendor/               # CSS or Sass from other projects and/or third parties
+ *   |   |-- _vendor.scss      # Imports your chosen vendor files to include
+ *   |   |-- _normalize.scss   # Normalize.css Scss port
+ *   |   |-- _reset.scss       # Style reset (Eric Myer's CSS reset ported to Scss)
+ *   |   |-- _mq.scss          # Sass-MQ Media Breakpoint Mixin
+ *   |   ...
+ *   |
+ *   |-- _primary-styles.scss  # Bundles up all of the files above ^^^^^^^^^^^^^^^^^
+ *   |  (** ^^^THIS^FILE^^^ **)
+ *   |
+ *   `-- main.scss            # primary Sass file
+ *
+ *  [Credit/Inspiration/To learn more: http://thesassway.com/beginner/how-to-structure-a-sass-project]
+ *
+ * =====================================================================================================================
+ */
+
+
+@import "vendor/vendor";
+@import "modules/modules";
+@import "partials/partials";
+
+// Nothing else should be added here unless you add more subdirectories.
+// In which case, the import should follow the 'subdirectory/subdirectory' pattern.
